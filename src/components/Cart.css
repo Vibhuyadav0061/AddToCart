@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+.navbar_container{
+   
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+ 
+}
+.logo h1{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-variant: small-caps;
+}
+.logo h1::after{
+    content: "_________";
+    color:rgb(0, 255, 76);
+    position: absolute;
+    top: 4%;
+    left: 7%;
+  
+}
+.logo h1::first-letter{
+    font-size: 50px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.search input{
+    border: none;
+    outline: none;
+    margin: 3px;
+}
+
+.searchIcon{
+    height: 20px;
+}
+.bucketIcon{
+    height: 20px;
+}
+.bucketBut{
+    border: none;
+    background: none;
+}
+.accountIcon{
+    height: 35px;
+    margin-right:20px;
+}
+.cartTotal{
+    position:relative;
+    bottom: 30px;
+    left: 10px;
+    background-color: rgba(255, 255, 255 ,0.7);
+    border-radius: 50%;
+}
+
+
+
+.cart_section{
+    width: 30%;
+    height: 70vh;
+    display: flex;
+    position: fixed;
+    top: 100px;
+    right: 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    /* border: 2px solid black ; */
+    background-color: azure;
+}
+.cart_section_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cross{
+    height: 30px;
+}
+.aero button{
+    background: none;
+    border: none;
+}
+
+/* Item */
+
+.itemHolder{
+    height: 35vh;
+    
+}
+.item_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid rgb(15, 3, 3); */
+    width: 85%;
+    height:80px;
+    margin:5px  auto;
+}
+.item_image{
+    height: 70px;
+}
+.item_detail{
+    font-size: 0.7rem;
+}
+.item_count_box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border: 0.5px solid black;
+    background-color: rgba(138, 130, 130,0.3);
+}
+.delete_icon{
+    height: 20px;
+}
+.minus_icon{
+    height: 20px;
+}
+.add_icon{
+    height: 20px;
+}
+
+/* Coupon */
+
+.coupon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 35px;
+    background-color: rgba(94, 241, 187, 0.5);
+}
+.coupon button{
+    background-image: linear-gradient(
+        rgb(223, 60, 5),
+        rgb(211, 122, 66)
+    );
+    border: none;
+    border-radius: 3px;
+    height: 20px;
+    width: 100px;
+    /* background-color: brown; */
+}
+
+/* total */
+.total{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 35px;
+}
+.subtotal{
+    display: flex;
+}
+
+/* CHECKOUT */
+.checkout{
+    height: 35px;
+    background-color: rgba(22, 134, 22,0.8);
+    color: white;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+   
+}
+.continue_shop{
+    height: 35px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+   
+}
